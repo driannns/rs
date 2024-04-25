@@ -291,7 +291,7 @@
             <hr style="border: 1px solid black; margin: 10px 0px">
             <div style="display: flex; flex-direction: column; gap: 0.5rem">
                 @foreach($queues as $data)
-                <div data-bs-toggle="modal" data-bs-target="#exampleModal{{ $data->id }}">
+                <div data-bs-toggle="modal" data-bs-target="#exampleModal{{ $data->id_antrian }}">
                     <div class="shadow"
                         style="background-color: white; display: flex; gap: 1rem; 	border-radius: 0.5rem;">
                         <div
@@ -305,8 +305,8 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal{{ $data->id }}" tabindex="-1"
-                    aria-labelledby="exampleModal{{ $data->id }}Label" aria-hidden="true">
+                <div class="modal fade" id="exampleModal{{ $data->id_antrian }}" tabindex="-1"
+                    aria-labelledby="exampleModal{{ $data->id_antrian }}Label" aria-hidden="true">
                     <div class="modal-dialog" style=" max-width: 440px;">
                         <div class="modal-content">
                             <div class="" style="background-color: #F1F864; border-radius: 0.5rem;">
