@@ -14,9 +14,5 @@ class AntrianController extends Controller
         return $queue;
     });
         return view('antrian.index', compact('queues'));
-    }
-
-    public function show(string $id){
-        return view('antrian.show');
-    }
+}
 }
